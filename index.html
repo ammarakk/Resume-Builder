@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume Builder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #f4f4f4;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 15px;
+        }
+        .text-center {
+            text-align: center;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #002b5b;
+            padding: 15px 20px;
+            color: white;
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-brand-icon {
+            width: 40px;
+            margin-right: 10px;
+        }
+        .navbar-toggler-btn {
+            display: block;
+            cursor: pointer;
+        }
+        .bars {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .bars .bar {
+            width: 25px;
+            height: 3px;
+            background: white;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #002b5b, #005082);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .header p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #0056b3, #003f7f);
+        }
+
+        /* Section One */
+        .section-one {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px 0;
+            align-items: center;
+            background: #fff;
+        }
+        .section-one img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        /* Section Items */
+        .section-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .section-item {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section-item-icon {
+            margin-bottom: 10px;
+        }
+        .section-item-icon img {
+            width: 50px;
+        }
+        .section-item-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            background: #002b5b;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section-one {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="assets/images/logo white.png" alt="Logo" class="navbar-brand-icon">
+            <span>Professional Resume Builder</span>
+        </div>
+        <button class="navbar-toggler-btn">
+            <div class="bars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </button>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <h1>Professional Resume Builder</h1>
+            <p>Build your career with a professional resume that stands out from the crowd. It’s quick, easy, and free to start!</p>
+            <a href="resume.html" class="btn-primary">Create My Resume</a>
+        </div>
+    </header>
+
+    <!-- Section One -->
+    <section class="section-one">
+        <div class="container">
+            <div class="content-wrapper">
+                <img src="assets/images/recruitment.gif" alt="Recruitment" class="section-img">
+                <div class="text-content">
+                    <h2>Use the Best Resume Maker</h2>
+                    <p>Give yourself an edge in the competitive job market with expertly designed resume templates. Build your dream career today!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        /* Section Styling */
+        .section-one {
+            background: #fff;
+            padding: 40px 0;
+        }
+    
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+    
+        .section-img {
+            width: 50%;
+            max-width: 500px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    
+        .text-content {
+            width: 45%;
+        }
+    
+        .text-content h2 {
+            font-size: 32px;
+            color: #002b5b;
+            margin-bottom: 20px;
+        }
+    
+        .text-content p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+    
+        /* Make it responsive on smaller screens */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+                text-align: center;
+            }
+    
+            .section-img {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+    
+            .text-content {
+                width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- Section Items -->
+    <section class="section-items container">
+        <div class="section-item">
+            <div class="section-item-icon">
+                <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+            <h5>Easy to Use</h5>
+            <p>Our resume builder is designed for everyone. No technical skills required!</p>
+        </div>
+        <div class="section-item">
+            <div class="section-item-icon">
+                <i class="fas fa-briefcase fa-2x"></i>
+            </div>
+            <h5>Professional Designs</h5>
+            <p>Choose from a variety of templates tailored for professionals.</p>
+        </div>
+        <div class="section-item">
+            <div class="section-item-icon">
+                <i class="fas fa-star fa-2x"></i>
+            </div>
+            <h5>Recruiter Approved</h5>
+            <p>Our templates are tested and approved by recruitment experts.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Professional Resume Builder. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Navbar Toggle Logic (Mobile View)
+        const togglerBtn = document.querySelector('.navbar-toggler-btn');
+        const navbarLinks = document.querySelector('.navbar-links');
+
+        togglerBtn.addEventListener('click', () => {
+            navbarLinks?.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
